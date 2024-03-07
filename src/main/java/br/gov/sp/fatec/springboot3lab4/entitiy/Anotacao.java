@@ -2,11 +2,19 @@ package br.gov.sp.fatec.springboot3lab4.entitiy;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "ant_anotacao")
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class Anotacao {
 
     @Id
