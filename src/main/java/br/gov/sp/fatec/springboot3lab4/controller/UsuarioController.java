@@ -27,7 +27,7 @@ public class UsuarioController {
     }
 
     @PostMapping
-    public ResponseEntity<Usuario> novoUsuario(@RequestBody String nome, String senha){
-        return ResponseEntity.status(HttpStatus.OK).body(usuarioService.novoUsuario(nome, senha));
+    public ResponseEntity<Usuario> novoUsuario(@RequestBody Usuario usuario){
+        return ResponseEntity.status(HttpStatus.OK).body(usuarioService.novoUsuario(usuario));
     }
 }

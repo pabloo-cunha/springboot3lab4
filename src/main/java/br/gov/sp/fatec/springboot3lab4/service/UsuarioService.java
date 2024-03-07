@@ -49,6 +49,7 @@ public class UsuarioService {
                 Set<Autorizacao> autorizacoes = new HashSet<>();
                 for(Autorizacao aut : usuario.getAutorizacoes()){
                     autorizacoes.add(buscarAutorizacaoPorId(aut.getId()));
+                    usuario.setAutorizacoes(autorizacoes);
                 }}
             );
         }
